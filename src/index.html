@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stdlib Case Convertor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>stdlib Case Conversion Showcase</h1>
+    </header>
+    <div class="main-area">
+        <form method="post" action="/convert">
+            <input type="text" name="inputText" id="inputText" placeholder="Include the text here..."/>
+            <div class="display-area">
+                <textarea name="convertedSentence" id="converted-sentence"></textarea>
+                <button type="button" onclick="copyToClipboard()">Copy</button>
+            </div>
+            <div class="options">
+                <button type="submit" name="conversion" value="camelCase">Camel Case</button>
+                <button type="submit" name="conversion" value="upperCase">Upper Case</button>
+                <button type="submit" name="conversion" value="lowerCase">Lower Case</button>
+                <button type="submit" name="conversion" value="headerCase">Header Case</button>
+                <button type="submit" name="conversion" value="pascalCase">Pascal Case</button>
+                <button type="submit" name="conversion" value="startCase">Start Case</button>
+                <button type="submit" name="conversion" value="kebabCase">Kebab Case</button>
+            </div>
+            
+        </form>
+    </div>
+    <script>
+        function copyToClipboard() {
+            const outputText = document.getElementById("converted-sentence").value;
+            navigator.clipboard.writeText(outputText)
+                .then(() => {
+                    alert("Text copied to clipboard!");
+                })
+                .catch(err => {
+                    console.error("Could not copy text: ", err);
+                    alert("Could not copy text.");
+                });
+            }
+    </script>
+</body>
+</html>

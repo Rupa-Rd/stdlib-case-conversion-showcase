@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 134, 169);
+    color: #333;
+  }
+  
+  header {
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  
+  .main-area {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    /* background-color: white; */
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .display-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: calc(100% - 80px); /* Adjust for button width */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 19px;
+    resize: vertical;
+    min-height: 20px;
+    resize: none;
+    vertical-align: middle;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display-area button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: yellow;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .options button {
+    padding: 8px 15px;
+    background-color: yellow;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .main-area button[type="button"]{
+      padding: 8px 15px;
+      background-color: yellow;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
